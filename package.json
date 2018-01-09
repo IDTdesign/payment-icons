@@ -6,12 +6,12 @@
     "clean": "rimraf min/**/*.svg build/",
     "sprite": "svg-sprite -C ./svg-sprite.json 'min/./**/*.svg'",
     "minify": "svgo -f svg/flat/ -o min/flat && svgo -f svg/mono/ -o min/mono && svgo -f svg/outline -o min/outline && svgo -f svg/single -o min/single",
-    "publish": "yarn build && yarn sprite && gh-pages -dist build/css --repo 'git@github.com:muffinresearch/payment-icons.git'  --message 'updating example'",
+    "publish": "yarn build && yarn sprite && gh-pages -dist build/css --repo 'git@github.com:IDTdesign/payment-icons.git'  --message 'updating example'",
     "build": "yarn run clean && yarn run minify"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muffinresearch/payment-icons.git"
+    "url": "git+https://github.com/IDTdesign/payment-icons.git"
   },
   "keywords": [
     "icons",
@@ -22,9 +22,9 @@
   "author": "Stuart Colville",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/muffinresearch/payment-icons/issues"
+    "url": "https://github.com/IDTdesign/payment-icons/issues"
   },
-  "homepage": "https://github.com/muffinresearch/payment-icons#readme",
+  "homepage": "https://github.com/IDTdesign/payment-icons#readme",
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "jest": "^21.2.1",
